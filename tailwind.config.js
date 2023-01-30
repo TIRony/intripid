@@ -14,6 +14,7 @@ module.exports = {
         mobileLogo: "url('../public/assets/logos/mobile-logo.svg')",
         desktopLogo: "url('../public/assets/logos/desktop-logo.svg')",
         pattern: "url('../public/assets/landing/pattern.png')",
+        table: "linear-gradient(180deg, #FBFCFD 0%, #F7F8FA 100%)",
       },
       fontFamily: {
         readex: ["Readex Pro", "sans-serif"],
@@ -42,6 +43,8 @@ module.exports = {
           smoke: "#E0E0E0",
           grey: "#9E9E9E",
           black: "#001F24",
+          warning: "#FF5E67",
+          pink: "#7E41E0",
         },
         button: {
           hover: "#E46B0B",
@@ -58,6 +61,8 @@ module.exports = {
         buttonShadow:
           "0px 4px 14px rgba(46, 24, 182, 0.14), 0px 4px 55px rgba(145, 36, 231, 0.08)",
         cardShadow: "0px 3.89465px 75.2966px rgba(174, 93, 255, 0.05)",
+        tableShadow:
+          "0px 7.31958px 100.644px rgba(0, 56, 108, 0.08), 0px 8.44128px 163.198px rgba(97, 93, 255, 0.05)",
       },
     },
   },

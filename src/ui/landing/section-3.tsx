@@ -17,7 +17,7 @@ const SectionThree = () => {
               variant="subtitle300"
             >
               Best travel advisors powerful machine learning and cloud computing
-              tools  that <br/> evaluate  thousands of cities—based on weather,
+              tools that <br /> evaluate thousands of cities—based on weather,
               attractions, travel time, flight availability—in seconds!
             </Typography>
           </div>

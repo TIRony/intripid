@@ -17,7 +17,7 @@ export const Planing = () => {
         <div className="relative">
           <ListCheckIcon className="w-[38px] fill-primary-brand absolute left-0 top-[5px]" />
           <Typography variant="heading3b" classname="text-primary-brand">
-          &#8201;&nbsp;&nbsp;&nbsp;Planning and Booking Assistance
+            &#8201;&nbsp;&nbsp;&nbsp;Planning and Booking Assistance
           </Typography>
         </div>
 
@@ -35,7 +35,6 @@ export const Planing = () => {
           </Typography>
         </Button>
       </div>
-
       <LazyLoadImage
         src="/assets/landing/Planning.png"
         className="max-w-full"

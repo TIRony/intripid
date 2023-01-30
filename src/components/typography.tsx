@@ -8,6 +8,7 @@ type Variants =
   | "heading3b"
   | "heading4"
   | "heading5"
+  | "heading5b"
   | "heading6"
   | "subhead200"
   | "subhead300"
@@ -48,6 +49,10 @@ export const Typography: FC<Props> = ({
       "font-jakarta text-[14px] leading-[21px] -tracking-[.02em] font-medium",
     heading5:
       "text-[28px] leading-[32px] sm:text-[38px] font-readex font-semibold sm:leading-[44px] -tracking-[.04em]",
+    heading5b:
+      "text-[28px] leading-[32px] font-readex font-semibold  -tracking-[.04em]",
+    heading6:
+      "text-[21px] leading-[24px]  -tracking-[.04em] font-readex font-semibold",
   };
 
   return (

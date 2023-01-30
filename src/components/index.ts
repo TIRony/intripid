@@ -7,3 +7,4 @@ export * from "./card";
 export * from "./tag";
 export * from "./step";
 export * from "./planing";
+export * from "./table";
