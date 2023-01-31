@@ -15,6 +15,8 @@ module.exports = {
         desktopLogo: "url('../public/assets/logos/desktop-logo.svg')",
         pattern: "url('../public/assets/landing/pattern.png')",
         table: "linear-gradient(180deg, #FBFCFD 0%, #F7F8FA 100%)",
+        "table-scroll":
+          "linear-gradient(276.95deg, #FFFFFF 5.8%, rgba(255, 255, 255, 0) 69.44%)",
       },
       fontFamily: {
         readex: ["Readex Pro", "sans-serif"],
@@ -45,6 +47,7 @@ module.exports = {
           black: "#001F24",
           warning: "#FF5E67",
           pink: "#7E41E0",
+          deepPink: "#925DE8",
         },
         button: {
           hover: "#E46B0B",
@@ -55,6 +58,8 @@ module.exports = {
         background: {
           hardElevation: "#F1F1F1",
           softGrey: "#F8F9FB",
+          pink: "#8B58DF",
+          lightPink: "#E4E5FF",
         },
       },
       boxShadow: {

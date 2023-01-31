@@ -14,7 +14,7 @@ const Card = ({ title = "", desc = "", icon }: Props) => {
     <div className="flex flex-col gap-10">
       <div className="flex gap-2 justify-center">
         {icon}
-        <Typography variant="heading3b" classname="text-primary-brand">
+        <Typography variant="heading3b" classname="text-primary-brand w-full">
           {title}
         </Typography>
       </div>

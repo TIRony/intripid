@@ -17,6 +17,9 @@ export const Table = () => {
         className="absolute top-0 left-[58px]"
         alt="dots svg"
       />
+      {/* <div className="absolute left-0 bg-table-scroll w-[215px] h-full z-20 top-0">
+        dwqdwqwwq
+      </div> */}
       <div className="flex shrink-0 w-full">
         <div className="flex flex-col w-[220px] x:w-[249px] shrink-0">
           <div className="h-[117px]" />

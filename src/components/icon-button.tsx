@@ -1,10 +1,19 @@
-import { FC } from "react";
+import { ButtonHTMLAttributes, FC } from "react";
 
-type Props = {
-  children: React.ReactElement;
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
   classname: string;
-};
+  withStar?: boolean;
+}
 
-export const IconButton: FC<Props> = ({ children, classname = "" }) => {
-  return <button className={[classname].join(" ")}>{children}</button>;
+export const IconButton: FC<Props> = ({
+  children,
+  classname = "",
+  ...rest
+}) => {
+  return (
+    <button {...rest} className={[classname].join(" ")}>
+      {children}
+    </button>
+  );
 };
