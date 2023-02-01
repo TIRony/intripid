@@ -53,6 +53,12 @@ export const Typography: FC<Props> = ({
       "text-[28px] leading-[32px] font-readex font-semibold  -tracking-[.04em]",
     heading6:
       "text-[21px] leading-[24px]  -tracking-[.04em] font-readex font-semibold",
+    body400:
+      "font-jakarta text-[16px] leading-[24px] -tracking-[.02em] font-medium",
+    body300:
+      "font-jakarta text-[16px] leading-[24px] -tracking-[.02em] font-normal",
+    subtitle300:
+      "font-jakarta text-[14px] leading-[21px] -tracking-[.02em] font-normal",
   };
 
   return (

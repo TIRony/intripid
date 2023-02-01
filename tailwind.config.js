@@ -14,6 +14,7 @@ module.exports = {
         mobileLogo: "url('../public/assets/logos/mobile-logo.svg')",
         desktopLogo: "url('../public/assets/logos/desktop-logo.svg')",
         pattern: "url('../public/assets/landing/pattern.png')",
+        pattern1: "url('../public/assets/landing/pattern1.png')",
         table: "linear-gradient(180deg, #FBFCFD 0%, #F7F8FA 100%)",
         "table-scroll":
           "linear-gradient(276.95deg, #FFFFFF 5.8%, rgba(255, 255, 255, 0) 69.44%)",
@@ -27,6 +28,7 @@ module.exports = {
         tablet: "768px",
         "desktop-s": "1440px",
         "desktop-2xl": "1330px",
+        "desktop-5xl": "1994px",
       },
       colors: {
         primary: {
@@ -60,6 +62,7 @@ module.exports = {
           softGrey: "#F8F9FB",
           pink: "#8B58DF",
           lightPink: "#E4E5FF",
+          lightBlue: "#F9FCFF",
         },
       },
       boxShadow: {
@@ -68,6 +71,7 @@ module.exports = {
         cardShadow: "0px 3.89465px 75.2966px rgba(174, 93, 255, 0.05)",
         tableShadow:
           "0px 7.31958px 100.644px rgba(0, 56, 108, 0.08), 0px 8.44128px 163.198px rgba(97, 93, 255, 0.05)",
+        cardShadow1: "0px 3.89465px 75.2966px rgba(174, 93, 255, 0.05)",
       },
     },
   },

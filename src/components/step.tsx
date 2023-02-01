@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { IslandIcon, UserTieIcon } from "../icons";

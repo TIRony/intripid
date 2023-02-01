@@ -8,3 +8,4 @@ export * from "./tag";
 export * from "./step";
 export * from "./planing";
 export * from "./table";
+export * from "./link";

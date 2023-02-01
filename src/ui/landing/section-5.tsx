@@ -21,13 +21,13 @@ const Card = ({
   return (
     <div
       className={[
-        "relative flex flex-col w-full max-w-[310px]  rounded-[32px] gap-6 sm:max-w-[654px] items-center p-8 border border-text-smoke bg-white h-[643px] sm:h-[467px] sm:py-[50px] x:max-w-[799px] x:h-[329px] sm:px-10 sm:pt-[50px] x:px-[50px] x:pt-[40px]",
+        "relative flex flex-col w-full max-w-[310px]  rounded-[32px] gap-6 sm:max-w-[654px] items-center p-8 border border-text-smoke bg-white h-[643px] sm:h-[467px] sm:py-[50px] x:max-w-[799px] x:h-[329px] sm:px-10 sm:pt-[50px] x:px-[50px] x:pt-[40px] mx-auto",
       ].join(" ")}
     >
       <div className="flex flex-col sm:gap-10 x:flex-row ">
         <LazyLoadImage
-          width={200}
-          height={200}
+          width={207}
+          height={207}
           className="rounded-full mx-auto"
           src={`/assets/landing/${imageUrl}`}
         />
@@ -107,17 +107,19 @@ const SectionFive = () => {
             </Typography>
           </div>
         </div>
+      </div>
+      <div className={["flex flex-col relative", maxWidth].join(" ")}>
         <Spacer classname="sm:h-[80px] x:h-[120px] h-10" />
-        <div className="relative x:mx-auto x:w-[799px]">
+        <div className="relative x:mx-auto x:w-[830px] w-full">
           <IconButton
             onClick={handleLeftArrowClick}
-            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 -left-[20px] sm:top-1/2 sm:-translate-y-1/2"
+            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 left-2 sm:top-1/2 sm:-translate-y-1/2 sm:left-[27px] x:-left-4"
           >
             <ArrowRight className="w-[18px] fill-white h-[27px]" />
           </IconButton>
           <IconButton
             onClick={handleRightArrowClick}
-            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 -right-[20px] sm:top-1/2 sm:-translate-y-1/2"
+            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 right-2 sm:top-1/2 sm:-translate-y-1/2 sm:right-[27px] x:-right-4"
           >
             <ArrowRight className="w-[18px] fill-white h-[24px] rotate-180" />
           </IconButton>
@@ -129,8 +131,12 @@ const SectionFive = () => {
             })}
           </Slider>
         </div>
-
         <Spacer classname="h-[80px] x:h-[120px]" />
+      </div>
+
+      <div
+        className={["flex flex-col items-center", Padding, maxWidth].join(" ")}
+      >
         <Button
           variant="Primary-B"
           classname="h-[59px] w-[310px] sm:w-[358px] x:w-[297px] mx-auto"
@@ -139,11 +145,7 @@ const SectionFive = () => {
             See Our Travelers’ Adventures
           </Typography>
         </Button>
-        <Spacer classname="h-[80px] sm:h-[120px]" />
-      </div>
-
-      <div className={["flex flex-col ", Padding, maxWidth].join(" ")}>
-        <Spacer classname="h-[120px] sm:h-[160px]" />
+        <Spacer classname="h-[120px] sm:h-[200px]" />
       </div>
     </div>
   );

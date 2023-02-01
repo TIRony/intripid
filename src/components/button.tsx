@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes, FC } from "react";
 import { StarIcon } from "../icons";
 
-type Variants = "Primary-A" | "Primary-B" | "Secondary";
+type Variants = "Primary-A" | "Primary-B" | "Secondary" | "Link";
 
 type Border = "Rounded" | "Square";
 
@@ -24,6 +24,7 @@ export const Button: FC<Props> = ({
       "bg-white border-[1px] border-text-smoke hover:shadow-buttonShadow rounded-[32px] flex justify-center items-center",
     "Primary-B": "bg-primary-orange hover:bg-button-hover rounded-[32px]",
     Secondary: "",
+    Link: "",
   };
 
   return (
