@@ -10,7 +10,7 @@ export const MainLayout: FC<Props> = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="mt-[94px] sm:mt-[110px]">{children}</main>
+      <main className="mt-[94px] sm:mt-[110px] overflow-x-hidden">{children}</main>
       <Footer />
     </>
   );

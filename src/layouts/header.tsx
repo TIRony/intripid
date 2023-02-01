@@ -8,7 +8,7 @@ const Header = () => {
     <header className="bg-white h-[94px] top-0 sm:h-[110px] fixed w-full z-50">
       <div
         className={[
-          "flex items-center h-full justify-between top-0 w-full mx-auto x:max-w-desktop-s 2xl:max-w-desktop-2xl",
+          "flex items-center h-full justify-between top-0 w-full mx-auto x:max-w-desktop-s 2xl:max-w-desktop-5xl",
           Padding,
         ].join(" ")}
       >

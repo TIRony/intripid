@@ -24,10 +24,9 @@ const SectionThree = () => {
         </div>
         <Spacer classname="h-20 x:h-[111px] sm:h-[120px]" />
         <Step />
-        <Spacer classname="h-[120px]" />
+        <Spacer classname="h-[120px] x:h-[111px]" />
         <Planing />
       </div>
-      <Spacer classname="h-[120px] sm:h-[160px]" />
     </div>
   );
 };

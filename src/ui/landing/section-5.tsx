@@ -1,6 +1,6 @@
 import { Button, IconButton, Spacer, Typography } from "../../components";
 import { maxWidth, Padding } from "../../constants";
-import { ArrowRight, CircleCheck, CircleXMark, LeftQoute } from "../../icons";
+import { ArrowRight, CommentIcon, LeftQoute } from "../../icons";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -96,16 +96,15 @@ const SectionFive = () => {
     <div className="relative overflow-hidden">
       <div className={["flex flex-col relative", Padding, maxWidth].join(" ")}>
         <Spacer classname="h-[120px] sm:h-[160px]" />
-        <div className="flex flex-col z-10 items-center w-full mx-auto">
-          <div className="flex flex-col items-center gap-4 x:gap-[14px]">
-            <Typography
-              variant="heading3"
-              classname="text-primary-brand text-center"
-            >
-              What They Say About{" "}
-              <span className="sm:text-text-deepPink">Intripid</span>
-            </Typography>
-          </div>
+        <div className="flex flex-col items-center relative">
+          <Typography
+            variant="heading3"
+            classname="text-primary-brand text-center"
+          >
+            What They Say About{" "}
+            <span className="sm:text-text-deepPink">Intripid</span>
+          </Typography>
+          {/* <CommentIcon className="w-[67px] h-[67px] absolute bottom-0" /> */}
         </div>
       </div>
       <div className={["flex flex-col relative", maxWidth].join(" ")}>

@@ -89,9 +89,9 @@ const SectionFour = () => {
   return (
     <div className="relative overflow-hidden">
       <div className={["flex flex-col relative", Padding, maxWidth].join(" ")}>
-        <Spacer classname="h-[120px] sm:h-[160px]" />
+        <Spacer classname="h-[120px] sm:h-[160px] x:h-[166px]" />
         <div className="flex flex-col z-10 items-center w-full mx-auto">
-          <div className="flex flex-col items-center gap-4 x:gap-[14px]">
+          <div className="flex flex-col items-center gap-4  x:px-40">
             <Tag text="How Intripid Compares" />
             <Typography
               variant="heading3"
