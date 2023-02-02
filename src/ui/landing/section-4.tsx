@@ -20,7 +20,7 @@ const Card = ({
   return (
     <div
       className={[
-        "flex flex-col w-full max-w-[312px]  rounded-[16px] p-8 gap-4 x:max-w-[373px]",
+        "flex flex-col w-full max-w-[312px]  rounded-[16px] p-8 gap-4 x:max-w-[373px] xl:max-w-[346px]",
         type === "warning"
           ? "bg-background-softGrey border border-text-smoke"
           : "bg-white border border-text-deepPink",
@@ -73,6 +73,9 @@ const SectionFour = () => {
     if (innerWidth > 1440) {
       return;
     }
+    if (innerWidth >= 1280) {
+      return;
+    }
     if (innerWidth > 767) {
       const margin = (innerWidth - screen.medium.width) / 2;
       setWidth(screen.medium.width - screen.medium.padding + margin);
@@ -89,9 +92,9 @@ const SectionFour = () => {
   return (
     <div className="relative overflow-hidden">
       <div className={["flex flex-col relative", Padding, maxWidth].join(" ")}>
-        <Spacer classname="h-[120px] sm:h-[160px] x:h-[166px]" />
+        <Spacer classname="h-[120px] xl:h-[160px] x:h-[166px]" />
         <div className="flex flex-col z-10 items-center w-full mx-auto">
-          <div className="flex flex-col items-center gap-4  x:px-40">
+          <div className="flex flex-col items-center gap-4  xl:px-40">
             <Tag text="How Intripid Compares" />
             <Typography
               variant="heading3"
@@ -101,18 +104,18 @@ const SectionFour = () => {
             </Typography>
           </div>
         </div>
-        <Spacer classname="h-[80px] sm:h-[120px] x:h-[160px]" />
+        <Spacer classname="h-[80px] sm:h-[120px] x:h-[160px] xl:h-[136px]" />
         <div
           style={{
             width: `${width}px`,
           }}
-          className="overflow-auto mx-auto relative x:w-fit bg-transparent z-20 shadow-tableShadow rounded-l-[30px] x:rounded-[30px]"
+          className="overflow-auto mx-auto relative xl:w-fit bg-transparent z-20 shadow-tableShadow rounded-l-[30px] x:rounded-[30px]"
         >
           <Table />
         </div>
-        <SvgComponent className="absolute top-[510px] -left-[100px] sm:top-[535px] sm:-left-[40px]  z-0 w-[1398px] h-[691px] x:left-4 x:top-[475px]" />
+        <SvgComponent className="absolute top-[510px] -left-[100px] sm:top-[535px] sm:-left-[40px]  z-0 w-[1398px] h-[691px] x:left-4 x:top-[475px] xl:-left-[30px] xl:top-[460px]" />
         <Spacer classname="h-[80px] sm:h-[120px] x:h-[160px]" />
-        <div className="flex flex-wrap gap-6 justify-center x:gap-10">
+        <div className="flex flex-wrap gap-6 justify-center xl:gap-10">
           {data.map(({ title, desc, type }) => {
             return (
               <Card
@@ -123,7 +126,7 @@ const SectionFour = () => {
             );
           })}
         </div>
-        <Spacer classname="h-[80px]" />
+        <Spacer classname="h-[80px] xl:h-[71px]" />
         <Button
           variant="Primary-B"
           classname="h-[59px] w-[310px] sm:w-[245px] x:w-[297px] mx-auto"

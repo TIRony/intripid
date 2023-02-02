@@ -12,7 +12,7 @@ export const Planing = () => {
   ];
 
   return (
-    <div className="flex x:flex-row flex-col gap-20">
+    <div className="flex xl:flex-row flex-col gap-20 xl:gap-[64px] x:gap-20">
       <div className="flex flex-col gap-10">
         <div className="relative">
           <ListCheckIcon className="w-[38px] fill-primary-brand absolute left-0 top-[5px]" />
@@ -37,7 +37,7 @@ export const Planing = () => {
       </div>
       <LazyLoadImage
         src="/assets/landing/Planning.png"
-        className="max-w-full"
+        className="max-w-full xl:max-w-[591px]"
       />
     </div>
   );

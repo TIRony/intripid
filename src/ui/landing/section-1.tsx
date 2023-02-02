@@ -6,8 +6,8 @@ const SectionOne = () => {
   return (
     <div className={["flex flex-col", Padding, maxWidth].join(" ")}>
       <Spacer classname="h-[42px]" />
-      <div className="flex flex-col x:flex-row w-full x:justify-between x:items-center 2xl:max-w-[1320px] 2xl:mx-auto x:h-[544px] relative h-[730px] sm:h-[1100px]">
-        <div className="flex flex-col gap-6  sm:gap-[30px] 2xl:w-[613px] x:w-[587px]">
+      <div className="flex flex-col xl:flex-row w-full xl:justify-between xl:items-center  2xl:max-w-[1320px] 2xl:mx-auto x:h-[544px] relative h-[730px] sm:h-[1100px] xl:h-[547px]">
+        <div className="flex flex-col gap-6  sm:gap-[30px] 2xl:w-[613px] x:w-[587px] xl:w-[516px]">
           <Typography variant="heading1" classname="text-primary-brand">
             Plan Less. Travel More.
           </Typography>
@@ -42,7 +42,7 @@ const SectionOne = () => {
           </div>
         </div>
         <LazyLoadImage
-          className="w-[315px]  sm:w-[654px] x:w-[590px] absolute x:right-0 -bottom-[20px] sm:-bottom-[40px]"
+          className="w-[315px] sm:w-[654px] x:w-[590px] xl:w-[600px] absolute xl:-right-[15px] x:right-0 -bottom-[20px] sm:-bottom-[40px] xl:-bottom-[35px]"
           alt="hero image"
           src="/assets/landing/hero-image.png"
         />

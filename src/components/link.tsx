@@ -6,5 +6,5 @@ type Props = {
 };
 
 export const Link: FC<Props> = ({ url, children }) => {
-  return <a href={url} className="hover:underline underline-offset-2">{children}</a>;
+  return <a href={url} className="hover:underline underline-offset-2 w-fit">{children}</a>;
 };

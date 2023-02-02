@@ -14,7 +14,7 @@ const SectionTwo = () => {
             Enjoy access to the world's best travel advisors & travel deals
           </Typography>
           <Spacer classname="h-[80px] sm:h-[120px]" />
-          <div className="flex flex-wrap gap-8 w-full sm:gap-6 justify-center 2xl:gap-10">
+          <div className="flex flex-wrap gap-8 w-full sm:gap-6 justify-center xl:gap-8 2xl:gap-10">
             <Card
               title={<span>Unlimited & Personalized</span>}
               desc="Members get limitless recommendations of destinations based on their
@@ -43,7 +43,7 @@ const SectionTwo = () => {
               icon={<TicketIcon className="w-[100px] h-[100px]" />}
             />
           </div>
-          <Spacer classname="h-10" />
+          <Spacer classname="h-10 xl:h-20" />
           <div className="flex flex-col gap-4 items-center">
             <Button
               withStar

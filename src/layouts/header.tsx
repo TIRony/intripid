@@ -5,7 +5,7 @@ import { BarsIcon } from "../icons";
 
 const Header = () => {
   return (
-    <header className="bg-white h-[94px] top-0 sm:h-[110px] fixed w-full z-50">
+    <header className="bg-white h-[94px] top-0 sm:h-[110px] fixed w-full z-50 xl:px-10 x:px-0">
       <div
         className={[
           "flex items-center h-full justify-between top-0 w-full mx-auto x:max-w-desktop-s 2xl:max-w-desktop-5xl",
@@ -13,8 +13,8 @@ const Header = () => {
         ].join(" ")}
       >
         <div className="bg-mobileLogo sm:bg-desktopLogo h-[56px] w-[49px] sm:w-[136px] sm:h-[42px] bg-no-repeat bg-cover" />
-        <div className="flex items-center gap-4 x:gap-10">
-          <div className="gap-10 hidden x:flex">
+        <div className="flex items-center gap-4 xl:gap-10">
+          <div className="gap-10 hidden xl:flex">
             <a href="/faq">
               <Typography variant="subhead400">About</Typography>
             </a>
@@ -39,7 +39,7 @@ const Header = () => {
               Be a Member
             </Typography>
           </Button>
-          <IconButton classname="py-2.5 px-4 x:hidden">
+          <IconButton classname="py-2.5 px-4 xl:hidden">
             <BarsIcon className="w-[25px] h-[42px]" />
           </IconButton>
         </div>

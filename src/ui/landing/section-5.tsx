@@ -21,30 +21,30 @@ const Card = ({
   return (
     <div
       className={[
-        "relative flex flex-col w-full max-w-[310px]  rounded-[32px] gap-6 sm:max-w-[654px] items-center p-8 border border-text-smoke bg-white h-[643px] sm:h-[467px] sm:py-[50px] x:max-w-[799px] x:h-[329px] sm:px-10 sm:pt-[50px] x:px-[50px] x:pt-[40px] mx-auto",
+        "relative flex flex-col w-full max-w-[310px]  rounded-[32px] gap-6 sm:max-w-[654px] items-center p-8 border border-text-smoke bg-white h-[643px] sm:h-[467px] sm:py-[50px] xl:max-w-[799px] xl:h-[329px] sm:px-10 sm:pt-[50px] xl:px-[50px] xl:pt-[40px] mx-auto",
       ].join(" ")}
     >
-      <div className="flex flex-col sm:gap-10 x:flex-row ">
+      <div className="flex flex-col sm:gap-10 xl:flex-row ">
         <LazyLoadImage
           width={207}
           height={207}
           className="rounded-full mx-auto"
           src={`/assets/landing/${imageUrl}`}
         />
-        <div className="flex-col gap-[13px] hidden x:flex absolute bottom-[27px] left-[51px]">
+        <div className="flex-col gap-[13px] hidden xl:flex absolute bottom-[27px] left-[51px]">
           <div className="h-[4px] w-[192px] rounded-[10px] bg-background-lightPink" />
           <div className="h-[4px] w-[139px] rounded-[10px] bg-background-lightPink" />
           <div className="h-[4px] w-[192px] rounded-[10px] bg-background-lightPink" />
         </div>
 
-        <div className="flex flex-col gap-6 sm:gap-4 x:gap-6">
-          <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-1 x:justify-start">
+        <div className="flex flex-col gap-6 sm:gap-4 xl:gap-6">
+          <div className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-1 xl:justify-start">
             <Typography variant="heading6">{name}</Typography>
             <Typography variant="heading6" classname="font-normal">
               {prof}
             </Typography>
           </div>
-          <div className="flex flex-col gap-3 items-center sm:flex-row sm:gap-8 x:gap-4 x:items-start">
+          <div className="flex flex-col gap-3 items-center sm:flex-row sm:gap-8 xl:gap-4 xl:items-start">
             <LeftQoute className="w-[32px] h-[44px] fill-text-deepPink shrink-0" />
             <Typography
               variant="subhead400"
@@ -108,17 +108,17 @@ const SectionFive = () => {
         </div>
       </div>
       <div className={["flex flex-col relative", maxWidth].join(" ")}>
-        <Spacer classname="sm:h-[80px] x:h-[120px] h-10" />
-        <div className="relative x:mx-auto x:w-[830px] w-full">
+        <Spacer classname="sm:h-[80px] xl:h-[120px] h-10" />
+        <div className="relative xl:mx-auto xl:w-[830px] w-full ">
           <IconButton
             onClick={handleLeftArrowClick}
-            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 left-2 sm:top-1/2 sm:-translate-y-1/2 sm:left-[27px] x:-left-4"
+            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 left-2 sm:top-1/2 sm:-translate-y-1/2 sm:left-[27px] xl:-left-4"
           >
             <ArrowRight className="w-[18px] fill-white h-[27px]" />
           </IconButton>
           <IconButton
             onClick={handleRightArrowClick}
-            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 right-2 sm:top-1/2 sm:-translate-y-1/2 sm:right-[27px] x:-right-4"
+            classname="bg-background-pink rounded-full sm:w-[59px] sm:h-[59px] flex justify-center items-center w-[48px] h-[48px] top-[292px] absolute z-20 right-2 sm:top-1/2 sm:-translate-y-1/2 sm:right-[27px] xl:-right-4"
           >
             <ArrowRight className="w-[18px] fill-white h-[24px] rotate-180" />
           </IconButton>
@@ -130,7 +130,7 @@ const SectionFive = () => {
             })}
           </Slider>
         </div>
-        <Spacer classname="h-[80px] x:h-[120px]" />
+        <Spacer classname="h-[80px] xl:h-[120px]" />
       </div>
 
       <div

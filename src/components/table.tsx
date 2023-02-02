@@ -21,7 +21,7 @@ export const Table = () => {
         dwqdwqwwq
       </div> */}
       <div className="flex shrink-0 w-full">
-        <div className="flex flex-col w-[220px] x:w-[249px] shrink-0">
+        <div className="flex flex-col w-[220px] xl:w-[266px] x:w-[249px] shrink-0">
           <div className="h-[117px]" />
           <div className="flex w-full h-[76px] sm:h-[72px] items-center gap-3 justify-end pr-4 sm:pr-8 x:pr-[44px]">
             <Typography variant="heading6" classname="text-primary-brand">
@@ -55,7 +55,7 @@ export const Table = () => {
           </div>
         </div>
         <div className="flex flex-row">
-          <div className="flex flex-col w-[149px] sm:w-[165px] x:w-[261px] bg-table">
+          <div className="flex flex-col w-[149px] sm:w-[165px] x:w-[261px] xl:w-[229px] bg-table">
             <div className="flex h-[117px] px-20 justify-center items-center">
               <Typography
                 variant="heading5b"
@@ -88,7 +88,7 @@ export const Table = () => {
               <RemoveIcon className="w-[14px] fill-text-warning" />
             </div>
           </div>
-          <div className="flex flex-col w-[174px] sm:w-[190px] x:w-[286px] bg-table shrink-0">
+          <div className="flex flex-col w-[174px] sm:w-[190px] x:w-[286px] xl:w-[254px] bg-table shrink-0">
             <div className="flex h-[117px] px-20 justify-center items-center">
               <Typography
                 variant="heading5b"
@@ -121,7 +121,7 @@ export const Table = () => {
               <RemoveIcon className="w-[14px] fill-text-warning" />
             </div>
           </div>
-          <div className="flex flex-col w-[179px] sm:w-[233px] x:w-[329px] border-[2px] border-text-pink rounded-[22px] bg-white shrink-0">
+          <div className="flex flex-col w-[179px] sm:w-[233px] x:w-[329px] xl:w-[258px] border-[2px] border-text-pink rounded-[22px] bg-white shrink-0">
             <div className="flex h-[117px] x:px-20 justify-center items-center">
               <img
                 src="/assets/logos/logo1.svg"

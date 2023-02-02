@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     screens: {
       sm: "767px",
+      xl: "1280px",
       x: "1439px",
       "2xl": "2559px",
     },
@@ -26,6 +27,7 @@ module.exports = {
       maxWidth: {
         mobile: "360px",
         tablet: "768px",
+        laptop: "1280px",
         "desktop-s": "1440px",
         "desktop-2xl": "1330px",
         "desktop-5xl": "1994px",

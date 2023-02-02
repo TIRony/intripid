@@ -22,9 +22,9 @@ const SectionThree = () => {
             </Typography>
           </div>
         </div>
-        <Spacer classname="h-20 x:h-[111px] sm:h-[120px]" />
+        <Spacer classname="h-20 xl:h-[111px] sm:h-[120px]" />
         <Step />
-        <Spacer classname="h-[120px] x:h-[111px]" />
+        <Spacer classname="h-[120px] xl:h-[111px]" />
         <Planing />
       </div>
     </div>

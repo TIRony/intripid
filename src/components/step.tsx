@@ -15,7 +15,10 @@ const Card = ({ title = "", desc = "", icon }: Props) => {
     <div className="flex flex-col gap-10">
       <div className="flex gap-2 justify-center">
         {icon}
-        <Typography variant="heading3b" classname="text-primary-brand sm:w-full">
+        <Typography
+          variant="heading3b"
+          classname="text-primary-brand sm:w-full"
+        >
           {title}
         </Typography>
       </div>
@@ -109,14 +112,14 @@ export const Step = () => {
   };
 
   return (
-    <div className="flex flex-col x:flex-row items-center gap-20 x:gap-0 w-full x:justify-between x:h-[688px]">
+    <div className="flex flex-col xl:flex-row items-center gap-20 xl:gap-0 w-full xl:justify-between x:h-[688px] xl:h-[742px]">
       <LazyLoadImage
         className={[
-          "w-[489px] h-[482px] x:w-[564px] x:h-[480px] hidden sm:block",
+          "w-[489px] h-[482px] xl:w-[564px] xl:h-[480px] hidden sm:block",
         ].join(" ")}
         src={`/assets/landing/${data[step].imgUrl}`}
       />
-      <div className="flex-col gap-[80px] hidden sm:flex x:h-full x:w-[540px] 2xl:w-[655px]">
+      <div className="flex-col gap-[80px] hidden sm:flex xl:h-full x:w-[540px] 2xl:w-[655px] xl:w-[500px]">
         <div className="flex">
           <CTAButton
             id="step1"
