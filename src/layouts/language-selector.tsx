@@ -35,7 +35,7 @@ const LanguageSelector = () => {
     },
   ];
 
-  console.log(menuProps.state)
+  console.log(menuProps.state);
 
   return (
     <div
@@ -44,6 +44,7 @@ const LanguageSelector = () => {
       )}
     >
       <div
+        onClick={() => toggleMenu()}
         id="language-selector"
         className="flex gap-2.5 items-center h-[37px] w-fit justify-center hover:cursor-pointer px-4"
       >
@@ -53,11 +54,7 @@ const LanguageSelector = () => {
             menuProps.state === "open" && "fill-text-pink",
           ].join(" ")}
         />
-        <MenuButton
-          onClick={() => toggleMenu()}
-          className={["h-full"].join(" ")}
-          ref={ref}
-        >
+        <MenuButton className={["h-full"].join(" ")} ref={ref}>
           <div className="flex gap-2.5 items-center">
             <Typography
               variant="subtitle400"
