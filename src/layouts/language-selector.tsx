@@ -13,6 +13,7 @@ const LanguageSelector = () => {
   const [selected, setSelected] = useState<string>("English");
   const ref = useRef(null);
   const [menuProps, toggleMenu] = useMenuState({ transition: false });
+  const [isOpen, setOpen] = useState<boolean>();
 
   const languages = [
     {
@@ -35,8 +36,6 @@ const LanguageSelector = () => {
     },
   ];
 
-  console.log(menuProps.state);
-
   return (
     <div
       className={["h-10 bg-background-softGrey flex justify-end", Padding].join(
@@ -44,7 +43,7 @@ const LanguageSelector = () => {
       )}
     >
       <div
-        onClick={() => toggleMenu()}
+        onClick={() => setOpen(!isOpen)}
         id="language-selector"
         className="flex gap-2.5 items-center h-[37px] w-fit justify-center hover:cursor-pointer px-4"
       >
@@ -60,7 +59,7 @@ const LanguageSelector = () => {
               variant="subtitle400"
               classname={[
                 "text-primary-brand  language-selector-child",
-                menuProps.state === "open" && "text-text-pink",
+                isOpen && "text-text-pink",
               ].join(" ")}
             >
               {selected}
@@ -68,19 +67,19 @@ const LanguageSelector = () => {
             <ChevronRight
               className={[
                 "rotate-90 fill-primary-brand w-[13px] language-selector-child",
-                menuProps.state === "open" && "-rotate-90 fill-text-pink",
+                isOpen && "-rotate-90 fill-text-pink",
               ].join(" ")}
             />
           </div>
         </MenuButton>
         <ControlledMenu
           {...menuProps}
+          state={isOpen ? "open" : "closed"}
           anchorRef={ref}
-          menuClassName=""
           direction="bottom"
           align="end"
-          onPointerLeave={() => toggleMenu(false)}
-          // onClose={() => toggleMenu(false)}
+          // onPointerLeave={() => setOpen(false)}
+          onClose={() => setOpen(false)}
         >
           <div
             className="rounded-[12px]  border border-text-smoke bg-white"
@@ -91,7 +90,10 @@ const LanguageSelector = () => {
           >
             {languages.map(({ name }, index) => (
               <MenuItem
-                onClick={() => setSelected(name)}
+                onClick={() => {
+                  setSelected(name);
+                  setOpen(false);
+                }}
                 className={[
                   "w-[240px] h-[53px] flex items-center px-4 hover:cursor-pointer hover:bg-background-softGrey",
                   index !== languages.length - 1 &&

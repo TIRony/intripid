@@ -33,7 +33,7 @@ export const Accordion: FC<Props> = ({ title, content }) => {
         <ChevronRight className="rotate-90" />
       </div>
       <div
-        className={`px-4 overflow-hidden transition-[max-height] duration-100 ease ${
+        className={`px-4 overflow-hidden transition-[max-height] duration-300 ease ${
           expanded ? "max-h-[1000px]" : "max-h-0"
         }`}
       >
