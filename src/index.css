@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+#language-selector:hover .language-selector-child {
+  color: #ad89e8 !important;
+  fill: #ad89e8 !important;
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Button, Spacer, Table, Tag, Typography } from "../../components";
 import { maxWidth, Padding, screen } from "../../constants";
 import { CircleCheck, CircleXMark, SvgComponent } from "../../icons";
@@ -113,7 +114,11 @@ const SectionFour = () => {
         >
           <Table />
         </div>
-        <SvgComponent className="absolute top-[510px] -left-[100px] sm:top-[535px] sm:-left-[40px]  z-0 w-[1398px] h-[691px] x:left-4 x:top-[475px] xl:-left-[30px] xl:top-[460px]" />
+        <LazyLoadImage
+          className="absolute top-[510px] -left-[100px] sm:top-[480px] sm:-left-[40px]  z-0 w-[1398px] max-w-[1398px] h-[691px] max-h-[691px] x:left-[20px] x:top-[485px] xl:-left-[30px] xl:top-[460px]"
+          src="/assets/landing/Vector 2.png"
+        />
+
         <Spacer classname="h-[80px] sm:h-[120px] x:h-[160px]" />
         <div className="flex flex-wrap gap-6 justify-center xl:gap-10">
           {data.map(({ title, desc, type }) => {

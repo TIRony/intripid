@@ -4,7 +4,7 @@ import { Typography } from "./typography";
 
 type Props = {
   children?: React.ReactNode;
-  menuData: any;
+  menuData?: any;
   menuButtonText?: string;
   menuContainerClassname?: string;
   menuButtonChild?: React.ReactElement;
@@ -21,13 +21,15 @@ export const CustomMenu: React.FC<Props> = ({
       menuButton={({ open }) => (
         <MenuButton
           className={[
-            " border-b-2",
+            " border-b-2 h-[35px]",
             open ? "border-b-primary-orange" : "border-b-white",
           ].join(" ")}
         >
           <div className="flex gap-2 items-center">
-            <Typography variant="subhead400">{menuButtonText}</Typography>
-            <ChevronRight className="rotate-90" />
+            <Typography variant="subhead400" classname="text-primary-brand">
+              {menuButtonText}
+            </Typography>
+            <ChevronRight className="rotate-90 fill-primary-brand" />
           </div>
         </MenuButton>
       )}

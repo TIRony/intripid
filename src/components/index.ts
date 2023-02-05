@@ -11,3 +11,6 @@ export * from "./table";
 export * from "./link";
 export * from "./menu";
 export * from "./desktop-menu";
+export * from "./navbar";
+export * from "./accordion";
+export * from "./font-awesome";

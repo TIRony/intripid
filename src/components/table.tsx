@@ -124,7 +124,7 @@ export const Table = () => {
           <div className="flex flex-col w-[179px] sm:w-[233px] x:w-[329px] xl:w-[258px] border-[2px] border-text-pink rounded-[22px] bg-white shrink-0">
             <div className="flex h-[117px] x:px-20 justify-center items-center">
               <img
-                src="/assets/logos/logo1.svg"
+                src="/assets/logos/desktop-logo.svg"
                 className="w-[130px] sm:w-[169px]"
                 alt="logo"
               />

@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
   important: true,
   theme: {
     screens: {
@@ -58,6 +61,7 @@ module.exports = {
         },
         button: {
           hover: "#E46B0B",
+          hoverPink: "#773BD9",
         },
         border: {
           soft: "#F5F5F5",
@@ -68,6 +72,7 @@ module.exports = {
           pink: "#8B58DF",
           lightPink: "#E4E5FF",
           lightBlue: "#F9FCFF",
+          hoverPink: "#AD89E8",
         },
       },
       dropShadow: {
@@ -84,5 +89,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin")],
 };

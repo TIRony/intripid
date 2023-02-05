@@ -2,7 +2,6 @@ import { MenuItem } from "@szhsin/react-menu";
 import {
   Buildings,
   HandHoldingBox,
-  IslandIcon,
   NavigationDropDown,
   TicketsAirline,
   TreePalm,

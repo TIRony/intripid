@@ -43,7 +43,7 @@ const SectionTwo = () => {
               icon={<TicketIcon className="w-[100px] h-[100px]" />}
             />
           </div>
-          <Spacer classname="h-10 xl:h-20" />
+          <Spacer classname="h-10 sm:h-20" />
           <div className="flex flex-col gap-4 items-center">
             <Button
               withStar

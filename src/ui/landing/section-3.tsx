@@ -14,7 +14,7 @@ const SectionThree = () => {
             </Typography>
             <Typography
               classname="text-primary-brand sm:w-[648px] x:w-[791px]"
-              variant="subtitle300"
+              variant="subhead300"
             >
               Best travel advisors powerful machine learning and cloud computing
               tools that <br /> evaluate thousands of cities—based on weather,
