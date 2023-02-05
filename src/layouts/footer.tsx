@@ -18,7 +18,7 @@ const Footer = () => {
               alt="logo"
             />
             <div className="flex flex-col gap-10">
-              <Typography variant="body300" classname="text-primary-brand">
+              <Typography variant="body300" classname="text-primary-brand text-center sm:text-start">
                 An online platform that encourages travel by removing stress
                 from personal, leisure travel planning.
               </Typography>
