@@ -1,9 +1,26 @@
 // @ts-nocheck
-import { Button, IconButton, Typography } from "../components";
+import { useState } from "react";
+import {
+  Button,
+  CustomMenu,
+  IconButton,
+  Typography,
+  DesktopMenu,
+} from "../components";
 import { Padding } from "../constants";
 import { BarsIcon } from "../icons";
 
 const Header = () => {
+  // const [showMenu, setShowMenu] = useState(false);
+
+  // useEffect(() => {
+  //   if (showMenu) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "scroll";
+  //   }
+  // }, [showMenu]);
+
   return (
     <header className="bg-white h-[94px] top-0 sm:h-[110px] fixed w-full z-50 xl:px-10 x:px-0">
       <div
@@ -18,9 +35,15 @@ const Header = () => {
             <a href="/faq">
               <Typography variant="subhead400">About</Typography>
             </a>
-            <a href="/faq">
-              <Typography variant="subhead400">Travel Solutions</Typography>
-            </a>
+            {/* <a href="/faq"> */}
+            <CustomMenu
+              menuButtonText="Travel Solutions"
+              menuContainerClassname="xl:-left-[150px] x:-left-[330px] top-[50px]"
+            >
+              <DesktopMenu />
+            </CustomMenu>
+            {/* <Typography variant="subhead400">Travel Solutions</Typography> */}
+            {/* </a> */}
             <a href="/faq">
               <Typography variant="subhead400">Our Travelers</Typography>
             </a>
@@ -43,6 +66,18 @@ const Header = () => {
             <BarsIcon className="w-[25px] h-[42px]" />
           </IconButton>
         </div>
+        {/* <div
+          style={{
+            transition: "0.3s",
+            opacity: showMenu ? 1 : 0,
+            left: showMenu ? "0%" : "100%",
+            height: "calc(100vh - 60px)",
+            minHeight: " -webkit-fill-available",
+            bottom: "0px",
+            paddingBottom: isSafari && "55px",
+          }}
+          className="w-full fixed flex flex-col  bg-white  top-[60px]  overflow-y-scroll z-50"
+        ></div> */}
       </div>
     </header>
   );

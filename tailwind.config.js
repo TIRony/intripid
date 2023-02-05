@@ -53,6 +53,9 @@ module.exports = {
           pink: "#7E41E0",
           deepPink: "#925DE8",
         },
+        accent: {
+          orange: "#F47F22",
+        },
         button: {
           hover: "#E46B0B",
         },
@@ -66,6 +69,10 @@ module.exports = {
           lightPink: "#E4E5FF",
           lightBlue: "#F9FCFF",
         },
+      },
+      dropShadow: {
+        navigationBoxShadow:
+          "drop-shadow(0px 4px 14px rgba(46, 24, 182, 0.14)) drop-shadow(0px 4px 55px rgba(145, 36, 231, 0.08))",
       },
       boxShadow: {
         buttonShadow:
