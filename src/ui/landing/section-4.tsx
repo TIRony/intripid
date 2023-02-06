@@ -1,7 +1,12 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Button, Spacer, Table, Tag, Typography } from "../../components";
 import { maxWidth, Padding, screen } from "../../constants";
+import {
+  faCircleXmark,
+  faCircleCheck,
+} from "@fortawesome/free-regular-svg-icons";
 import { CircleCheck, CircleXMark, SvgComponent } from "../../icons";
 
 const Card = ({
@@ -33,12 +38,13 @@ const Card = ({
           classname={[typeMapping[type]].join(" ")}
         >
           {title}
+          {` `}
+          {type === "success" ? (
+            <FontAwesomeIcon icon={faCircleCheck} />
+          ) : (
+            <FontAwesomeIcon icon={faCircleXmark} />
+          )}
         </Typography>
-        {type === "success" ? (
-          <CircleCheck className="w-[28px] h-[28px] fill-text-deepPink absolute bottom-0 right-0" />
-        ) : (
-          <CircleXMark className="w-[28px] h-[28px] fill-text-warning absolute bottom-0 right-0" />
-        )}
       </div>
 
       <Typography variant="subhead300">{desc}</Typography>

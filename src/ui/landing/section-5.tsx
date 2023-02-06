@@ -96,15 +96,20 @@ const SectionFive = () => {
     <div className="relative overflow-hidden">
       <div className={["flex flex-col relative", Padding, maxWidth].join(" ")}>
         <Spacer classname="h-[120px] sm:h-[160px]" />
-        <div className="flex flex-col items-center relative">
+        <div className="flex flex-col items-center relative h-[272px] sm:h-[160px] xl:h-[78px] x:w-[1193px] x:text-center">
           <Typography
             variant="heading3"
             classname="text-primary-brand text-center"
           >
-            What They Say About{" "}
+            What They Say About{` `}
             <span className="sm:text-text-deepPink">Intripid</span>
+            <span className="hidden sm:inline">
+              {" "}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
           </Typography>
-          {/* <CommentIcon className="w-[67px] h-[67px] absolute bottom-0" /> */}
+
+          <CommentIcon className="w-[80px] h-[80px] absolute bottom-0 fill-primary-brand sm:right-[60px] xl:right-[50px] x:right-[90px]" />
         </div>
       </div>
       <div className={["flex flex-col relative", maxWidth].join(" ")}>

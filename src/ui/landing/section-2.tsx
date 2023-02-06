@@ -6,7 +6,7 @@ const SectionTwo = () => {
   return (
     <div className="bg-pattern overflow-hidden relative mx-auto">
       <Shape className="absolute w-[602px] h-[540px] -z-0 -left-[240px] -top-[130px] " />
-      <SvgShape className="absolute -z-0 -right-[200px]  -bottom-[160px] w-[604px] h-[484px] hidden x:block" />
+      <SvgShape className="absolute -z-0 -right-[200px]  -bottom-[160px] w-[604px] h-[484px] hidden xl:block" />
       <div className={["flex flex-col", Padding, maxWidth].join(" ")}>
         <Spacer classname="h-[120px] sm:h-[160px]" />
         <div className="flex flex-col text-center z-10">
