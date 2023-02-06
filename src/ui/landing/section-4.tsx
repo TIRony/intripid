@@ -133,7 +133,7 @@ const SectionFour = () => {
         <Spacer classname="h-[80px] sm:h-[120px] x:h-[160px] xl:h-[136px]" />
         <div
           style={{
-            width: `${width}px`,
+            width: width === 0 ? "w-fit" : `${width}px`,
           }}
           className="overflow-auto mx-auto relative xl:w-fit bg-transparent z-20 shadow-tableShadow rounded-l-[30px] x:rounded-[30px]"
         >

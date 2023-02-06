@@ -30,7 +30,7 @@ const LanguageSelector = () => {
 
   return (
     <div
-      className={["h-10 bg-background-softGrey flex justify-end", Padding].join(
+      className={["h-10 bg-background-softGrey w-full flex justify-end", Padding].join(
         " "
       )}
     >

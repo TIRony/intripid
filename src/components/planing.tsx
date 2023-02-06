@@ -1,4 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { CheckIcon, ListCheckIcon } from "../icons";
 import { Button } from "./button";
 import { Typography } from "./typography";
@@ -37,6 +38,9 @@ export const Planing = () => {
       </div>
       <LazyLoadImage
         src="/assets/landing/Planning.png"
+        effect="blur"
+        alt="image"
+        placeholderSrc="/assets/landing/Planning.webp"
         className="max-w-full xl:max-w-[660px]"
       />
     </div>

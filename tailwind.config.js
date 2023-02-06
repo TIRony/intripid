@@ -5,7 +5,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
-  important: true,
+  important: false,
   theme: {
     screens: {
       sm: "767px",

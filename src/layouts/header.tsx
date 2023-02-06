@@ -24,11 +24,11 @@ const Header = () => {
   }, [showMenu]);
 
   return (
-    <header className="bg-white top-0 fixed w-full z-50 xl:px-10 x:px-0">
+    <header className="bg-white top-0 fixed w-full z-50">
       <LanguageSelector />
       <div
         className={[
-          "flex items-center h-[94px] sm:h-[110px]  justify-between top-0 w-full mx-auto x:max-w-desktop-s 2xl:max-w-desktop-5xl px-6 sm:px-10 x:px-[120px] xl:px-16 2xl:px-0",
+          "flex items-center h-[94px] sm:h-[110px]  justify-between top-0 w-full mx-auto x:max-w-desktop-s 2xl:max-w-desktop-5xl px-6 sm:px-10 x:px-[120px] xl:px-[110px] 2xl:px-0",
         ].join(" ")}
       >
         <img
