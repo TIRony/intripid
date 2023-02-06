@@ -45,6 +45,7 @@ const LanguageSelector = () => {
       <div
         onClick={() => setOpen(!isOpen)}
         id="language-selector"
+        ref={ref}
         className="flex gap-2.5 items-center h-[37px] w-fit justify-center hover:cursor-pointer px-4"
       >
         <GlobeIcon
@@ -53,7 +54,7 @@ const LanguageSelector = () => {
             menuProps.state === "open" && "fill-text-pink",
           ].join(" ")}
         />
-        <MenuButton className={["h-full"].join(" ")} ref={ref}>
+        <MenuButton className={["h-full"].join(" ")}>
           <div className="flex gap-2.5 items-center">
             <Typography
               variant="subtitle400"
