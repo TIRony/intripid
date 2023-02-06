@@ -37,7 +37,7 @@ export const Planing = () => {
       </div>
       <LazyLoadImage
         src="/assets/landing/Planning.png"
-        className="max-w-full xl:max-w-[591px]"
+        className="max-w-full xl:max-w-[660px]"
       />
     </div>
   );

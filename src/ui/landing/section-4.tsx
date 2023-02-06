@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Button, Spacer, Table, Tag, Typography } from "../../components";
 import { maxWidth, Padding, screen } from "../../constants";
@@ -14,7 +14,7 @@ const Card = ({
   desc = "",
   type,
 }: {
-  title: string;
+  title: string | React.ReactElement;
   desc: string;
   type: "warning" | "success";
 }) => {
@@ -32,7 +32,7 @@ const Card = ({
           : "bg-white border border-text-deepPink",
       ].join(" ")}
     >
-      <div className="relative w-full max-w-[248px]">
+      <div className="relative w-full max-w-[248px] xl:max-w-full">
         <Typography
           variant="heading5b"
           classname={[typeMapping[type]].join(" ")}
@@ -54,17 +54,36 @@ const Card = ({
 
 const data = [
   {
-    title: "Legacy Custom— but expensive!",
+    title: (
+      <span>
+        <span className="xl:hidden">Legacy Custom— but expensive!</span>
+        <span className="hidden xl:inline">
+          Legacy Custom—
+          <br /> but expensive!
+        </span>
+      </span>
+    ),
     desc: "Takes hundreds of dollars to employ an agent who will spend hours—or even days!—researching a small number of potential locations.",
     type: "warning",
   },
   {
-    title: "Legacy Pre-Packaged— not customized!",
+    title: (
+      <span>
+        <span className="xl:hidden">
+          Legacy Pre-Packaged—
+          <br /> not customized!
+        </span>
+        <span className="hidden xl:inline">
+          Legacy Pre-Packaged— <br />
+          not customized!
+        </span>
+      </span>
+    ),
     desc: "A  microwave dinner of a trip - these are travel packages built to sell at volume, built for...definitely not you!",
     type: "warning",
   },
   {
-    title: "Personalized, Fast, and Affordable!—Intripid circle-check",
+    title: "Personalized, Fast, and Affordable!—Intripid",
     desc: "Intripid 's proprietary tech enables highly-personalized results, delivered fast - and at super-low cost",
     type: "success",
   },
